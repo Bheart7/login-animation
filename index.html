@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap"
+      rel="stylesheet"
+    />
+    <title>ANIMATED LOGIN</title>
+  </head>
+  <body>
+    <h1>ANIMATED LOGIN</h1>
+    <div class="login">
+      <img src="img/idle/1.png" alt="monster" id="monster" />
+      <div class="container-form">
+        <form action="#">
+          <label for="">Email</label>
+          <input
+            onfocus="follow = false"
+            onblur="follow = true"
+            type="text"
+            id="email"
+            placeholder="name@email.com"
+          />
+          <label for="">Password</label>
+          <input
+            onfocus="cover()"
+            onblur="uncover()"
+            type="password"
+            id="password"
+            placeholder="********"
+          />
+          <input type="submit" value="login" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="index.js" charset="UTF-8"></script>
+</html>
